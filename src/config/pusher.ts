@@ -8,3 +8,5 @@ const pusher = new Pusher({
     cluster: process.env.eu as string,
     encrypted: true
 });
+
+export default pusher
