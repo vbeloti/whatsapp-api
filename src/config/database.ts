@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+const SECRET_URL = process.env.SECRET_URL as string;
 
-const SECRET_URL = process.env.SECRET_URL || 'mongodb+srv://vbeloti:jOQdYz6L87lfqfqo@cluster0.lteyz.mongodb.net/whatsapp-api?retryWrites=true&w=majority';
+import mongoose from 'mongoose';
 
 mongoose.connect(SECRET_URL, {
     useCreateIndex: true,
