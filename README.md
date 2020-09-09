@@ -8,5 +8,5 @@
 
 Open endpoints require no Authentication.
 
-* [Messagges]: `POST /api/v1/messages/store`
-* [Messagges]: `GET /api/v1/messages/show`
+* [Messagges]: `POST /api/v1/messages` -- Create One Message
+* [Messagges]: `GET /api/v1/messages` -- List All Messages

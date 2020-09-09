@@ -5,8 +5,8 @@ const whatsapp = new WhatsApp();
 const routes = Router();
 const app = express();
 
-routes.get('/messages/show', whatsapp.show);
+routes.get('/messages', whatsapp.index);
 
-routes.post('/messages/store', whatsapp.store);
+routes.post('/messages', whatsapp.store);
 
 export default routes;

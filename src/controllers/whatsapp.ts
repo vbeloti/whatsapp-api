@@ -8,19 +8,7 @@ interface IData {
 }
 
 class WhatsApp {
-    store(req: Request, res: Response) {
-        const dbMessage = req.body;
-        
-        Messages.create(dbMessage, (err: Error, data: IData) => {
-            if (err) {
-                res.status(500).send(err);
-            } else {
-                res.status(201).send(data);
-            }
-        })
-    }
-
-    show(req: Request, res: Response) {
+    index(req: Request, res: Response) {
         Messages.find((err: Error, data: IData) => {
             if (err) {
                 res.status(500).send(err);
@@ -30,6 +18,17 @@ class WhatsApp {
         })
     }
 
+    store(req: Request, res: Response) {
+        const dbMessage = req.body;
+
+        Messages.create(dbMessage, (err: Error, data: IData) => {
+            if (err) {
+                res.status(500).send(err);
+            } else {
+                res.status(201).send(data);
+            }
+        })
+    }
 }
 
 export default WhatsApp;
