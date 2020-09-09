@@ -20,6 +20,7 @@ db.once('open', () => {
 
         if (change.operationType === 'insert') {
             const messageDetails = change.fullDocument;
+            console.log(messageDetails);
 
             pusher.trigger('messages', 'inserted', {
                 name: messageDetails.name,
