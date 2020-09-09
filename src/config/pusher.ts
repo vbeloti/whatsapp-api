@@ -2,10 +2,10 @@ import Pusher from 'pusher';
 
 
 const pusher = new Pusher({
-    appId: process.env.APPID as string,
-    key: process.env.KEY as string,
-    secret: process.env.c6f868fc63235c034e15 as string,
-    cluster: process.env.eu as string,
+    appId: '1070018',
+    key: '3277987e3192daa36880',
+    secret: 'c6f868fc63235c034e15',
+    cluster: 'eu',
     encrypted: true
 });
 
