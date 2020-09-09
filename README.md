@@ -2,8 +2,6 @@
 
 <!-- <img src="" alt="WhatsApp Api" /> -->
 
-In the project directory, you can run:
-
 # WhatsApp Api
 
 ## Open Endpoints
